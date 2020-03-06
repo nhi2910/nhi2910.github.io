@@ -27,9 +27,47 @@
 		#nav ul li {
 			font-size: 1.5rem;
 		}
+		ul li{
+			list-style: none;
+		}
+		.footer-list{
+	padding-left: 0px;
+}
+.footer-link{
+	display: flex;
+	align-items: center;
+	color: black;
+}
+.social-space{
+	margin-left: 10px;
+}
+.social{
+	opacity: 0.9;
+	transition: transform;
+	transition-delay: 0.1s;
+}
+.social:hover{
+	opacity: 1;
+	transform: rotate(340deg);
+}
+.footer-input{
+	outline: none;
+	border:1px solid #3F3D3D;
+	height: 40px;
+	border-radius: 20px;
+	width: 90%;
+	padding-left: 12px;
+	background: #F19F9F;
+}
+.footer-end{
+	text-align: center;
+	margin: 0 auto;
+}
 	</style>
 </head>
 <body>
+	<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v6.0"></script>
 	<div class="container-fluid bg-transparent">
 	<nav class="navbar navbar-expand-md navbar-light bg-dark sticky-top">
 		<div style="display: flex; justify-content: space-between;" class="container">
@@ -95,8 +133,6 @@
       <span class="sr-only">Next</span>
     </a>
   </div>
-  <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.3245994983818!2d106.6326683137861!3d10.786431992314736!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752ea94cfeec4b%3A0x77ec818f4d446c8f!2zMTE0LzEwNyBQaMO6IFRo4buNIEjDsmEsIFBow7ogVGjhu40gSG_DoCwgVMOibiBQaMO6LCBI4buTIENow60gTWluaCwgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2s!4v1583498249423!5m2!1svi!2s" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-	</div> -->
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-md-9 col-sm-12 ">
@@ -204,6 +240,7 @@
 					</div>
 					<div class="col-md-12 col-sm-12 ">
 						<h4>Thảo luận, chủ đề với mọi người</h4>
+						<div class="fb-comments" data-href="https://nhi2910.github.io/" data-width="" data-numposts="5"></div>
 					</div>
 				</div>
 
@@ -237,9 +274,60 @@
 					</div>
 					<div class="col-md-12 col-sm-12">
 					<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FCh%E1%BB%89-ph%C3%A0o-nh%E1%BB%B1a-h%C3%A0n-qu%E1%BB%91c-135015917330209%2F&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="100%" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+					<br>
+					<h2 style="font-size: 2rem ; color: #FB0320; font-weight: 700">Video nhóm thi công</h2>
+					</div>
+					<div class="col-md-12 col-sm-12">
+					<iframe width="100%" height="300" src="https://www.youtube.com/embed/_7edpGy8afE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 					</div>
 				</div>
 			</div>
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.3245994983818!2d106.6326683137861!3d10.786431992314736!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752ea94cfeec4b%3A0x77ec818f4d446c8f!2zMTE0LzEwNyBQaMO6IFRo4buNIEjDsmEsIFBow7ogVGjhu40gSG_DoCwgVMOibiBQaMO6LCBI4buTIENow60gTWluaCwgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2s!4v1583498249423!5m2!1svi!2s" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+		</div>
+		<div class="row" style="background: #fff206;">
+			<div class="col-md-3 col-sm-12">
+				<h3 class="footer-heading">Giới thiệu</h3>
+				<ul class="footer-list">
+				    <li class="footer-item">
+				    	<a class="footer-link" href="#">Trung tâm trợ giúp</a>
+				    	<a class="footer-link" href="#">phản hồi khách hàng</a>
+				    	<a class="footer-link" href="#">Hỗ trợ mua hàng</a>
+				    </li>
+				</ul>
+			</div>
+			<div class="col-md-3 col-sm-12">
+				<h3 class="footer-heading">Danh mục</h3>
+				<ul class="footer-list">
+				    <li class="footer-item">
+				    	<a class="footer-link" href="#">Giới thiệu về chúng tôi</a>
+				    	<a class="footer-link" href="#">Tuyển dụng</a>
+				    	<a class="footer-link" href="#">Điều khoản </a>
+				    </li>
+				</ul>
+			</div>
+			<div class="col-md-3 col-sm-12">
+				<h3 class="footer-heading">Theo dõi</h3>
+				<ul class="footer-list">
+				    <li class="footer-item">
+				    	<a class="footer-link" href="https://www.facebook.com/anhimdi" target="blank"><i style="color: #3b5998" id="social-fb" class="fa fa-facebook-square fa-3x social"></i><span class="social-space">Facebook</span></a>
+				    </li>
+				    <li class="footer-item">
+				    	<a class="footer-link" href="#"><i style="color: #55acee"  id="social-tw" class="fa fa-twitter-square fa-3x social"></i>
+				    	<span class="social-space">Twitter</span></a>
+				    </li>
+				    <li class="footer-item">
+				    	<a class="footer-link" href="#"><i style="color: #bd081c" id="social-em" class="fa fa-pinterest-square fa-3x social"></i>
+				    	<span class="social-space">Pinterest</span></a>
+				    </li>
+				</ul>
+			</div>
+			<div class="col-md-3 col-sm-12">
+				<h3 class="footer-heading">Nhận thông báo</h3>
+				<p>Nhập Gmail của bạn để chúng tôi gửi những thông báo mới nhất</p>
+				<input class="footer-input" type="text" name="gmail" placeholder="Nhập Gmail của bạn"><br><br>
+				<input class="bnt btn-primary" type="submit" name="sub" value="Gửi">
+			</div>
+		</div>
 		</div>
 	</div>
 </body>
